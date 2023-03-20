@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="project4.css"/>
+    <title>Connect</title>
+    <link rel="shortcut icon" type="x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="emojionearea.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js">
+    
+
+</head>
+<body >
+<div class="connect">
+    <h1 >
+       <ul class="connect1">
+        <li>
+            <a href="https://www.figma.com/proto/2rGcrYjn0aGwmSPki7puYT/Connect-us?node-id=8%3A5&scaling=min-zoom&page-id=0%3A1" target="_blank">Connect With Us</a>
+        </li></ul> </a></h1>
+    <p id="We">We would love to respond to your queries and help you succeed.Feel free to get in touch with us</p>
+    <div class="bigbox">
+        <div class="box-left">
+            <h3>Send your request
+                <form id="btnform">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" id="name" width="100px"  placeholder="Your Name" accesskey="n">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" id="number"  placeholder="Your Phone" accesskey="p">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <select class="big" multiple="multiple" name="" id=""></select>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text"  placeholder="Your Subject">
+
+                    </div>
+                    </div>
+                    <label>Message</label>
+                    <div class="tarea" style="height: 500px;background-color: white;">
+                        <textarea id="textarea" rows="15" style="height:500px"
+                         cols="30" placeholder="Your message"></textarea>
+                    </div>
+                    <p><span id="countno">0</span>/5</p>
+                   <img src="" id="bla" alt="Img" width="300" height="300">
+                   <input type="file" onchange="readURL(this)">
+                   <br>
+                   <button type="button" id="close" onclick="removeImg()">Close</button>
+                  <input type="submit" value="Submit" style="width:50px">
+                </form>
+            </h3>
+        </div>
+        <div class="box-right">
+            <h3 class="Naruto">Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>phamtrungtinpy363@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>0999999999</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Spacespeaker</td>
+                    </tr>
+                </table>
+                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                    <option value="AL">Alabama</option>
+                      ...
+                    <option value="WY">Wyoming</option>
+                  </select>
+            </h3>
+        </div>
+    </div>
+</div>
+ <script type="text/javascript">
+//   var a = document.getElementById("bla");
+//   function readURL(input){
+//     if(input.files){
+//         var reader = new FileReader();
+//         reader.readAsDataURL(input.files[0]);
+//         reader.onload=(e) => {
+//             a.src = e.target.result;
+//         }
+//     }
+//   }
+//  removeImg=() => {
+//     a.src="";
+//  }
+//  $(document).on('input', function(){
+
+//      var num = $('number').val();
+//      if(num.indexOf('0') !==0){
+//          alert('First digit must be 0');
+//          $('number').val('');
+//      }
+//  })
+
+ 
+   
+ </script>           
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js">
+          $("#btnform").validate({
+  submitHandler: function(form) {
+    form.submit();
+  }
+ });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script>
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+      </script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js"></script>
+      <script>
+        $('#textarea').emojioneArea({
+            pickerPosition: 'center'
+        });
+      </script>
+      <script>
+        $('#name').emojioneArea({
+            pickerPosition: 'center'
+        });
+      </script>
+        
+
+
+</body>
+</html>
